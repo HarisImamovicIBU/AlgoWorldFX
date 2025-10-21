@@ -5,16 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c3eedb5-8467-4e75-b454-5dd597a223f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/AlgoWorldFX.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/bubblesort/bubblesort/Bar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/bubblesort/bubblesort/BarTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/bubblesort/bubblesort/BubbleSortControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bubblesort/bubblesort/Bar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bubblesort/bubblesort/Bar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bubblesort/bubblesort/BubbleSortApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bubblesort/bubblesort/BubbleSortApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bubblesort/bubblesort/BubbleSortController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bubblesort/bubblesort/BubbleSortController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -29,10 +39,10 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="34ND0Eslq4H34gNLAViJafA5gEZ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,9 +53,11 @@
     "Application.BubbleSortApp.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/javafx-sdk-25/lib",
+    "last_opened_file_path": "C:/xampp/htdocs/AlgoWorldFX/bubblesort",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -57,6 +69,14 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.bubblesort.bubblesort" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="BubbleSortApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.bubblesort.bubblesort.BubbleSortApp" />
@@ -93,7 +113,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1761044912676</updated>
-      <workItem from="1761044913831" duration="7036000" />
+      <workItem from="1761044913831" duration="8144000" />
+      <workItem from="1761062696352" duration="1249000" />
+      <workItem from="1761065087022" duration="835000" />
+      <workItem from="1761068734612" duration="23000" />
+      <workItem from="1761073183283" duration="1579000" />
+      <workItem from="1761083090315" duration="1364000" />
     </task>
     <servers />
   </component>

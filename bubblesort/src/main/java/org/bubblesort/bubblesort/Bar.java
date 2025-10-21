@@ -5,6 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Font;
 
 public class Bar extends StackPane {
     private final int value;
@@ -17,7 +18,8 @@ public class Bar extends StackPane {
         rect.setFill(Color.web("#0d6efd"));
         rect.setStroke(Color.WHITE);
         label = new Label(String.valueOf(value));
-        label.setTextFill(Color.WHITE);
+        label.setTextFill(Color.BLACK);
+        label.setFont(new Font("Verdana", 20));
         setAlignment(Pos.BOTTOM_CENTER);
         getChildren().addAll(rect, label);
         setPrefHeight(300);

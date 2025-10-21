@@ -33,6 +33,9 @@ public class BubbleSortController {
             pane.getChildren().add(bar);
         }
     }
+    public Pane getPane() {
+        return pane;
+    }
     private void positionBar(Bar bar, int index) {
         double x = spacing + index * (barWidth + spacing);
         bar.setLayoutX(x);
@@ -90,5 +93,23 @@ public class BubbleSortController {
             pause.setOnFinished(e -> action.run());
         }
         return pause;
+    }
+    public void resetAnimation(int [] array){
+        this.pane.getChildren().removeIf(node->node instanceof Bar);
+        this.bars.clear();
+        int maxValue = 0;
+        for(int val : array) {
+            if(val>maxValue) {
+                maxValue = val;
+            }
+        }
+        for(int i=0;i<array.length;i++) {
+            Bar bar = new Bar(array[i], barWidth, maxValue);
+            bars.add(bar);
+            double x = spacing + i * (barWidth + spacing);
+            bar.setLayoutX(x);
+            bar.setLayoutY(50);
+            pane.getChildren().add(bar);
+        }
     }
 }
