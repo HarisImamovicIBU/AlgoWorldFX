@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c3eedb5-8467-4e75-b454-5dd597a223f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/bubblesort/bubblesort/BarTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/bubblesort/bubblesort/BubbleSortControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bubblesort/bubblesort/Bar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bubblesort/bubblesort/Bar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bubblesort/bubblesort/BubbleSortApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bubblesort/bubblesort/BubbleSortApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bubblesort/bubblesort/BubbleSortController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bubblesort/bubblesort/BubbleSortController.java" afterDir="false" />
-    </list>
+    <list default="true" id="2c3eedb5-8467-4e75-b454-5dd597a223f4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,7 +109,7 @@
       <workItem from="1761065087022" duration="835000" />
       <workItem from="1761068734612" duration="23000" />
       <workItem from="1761073183283" duration="1579000" />
-      <workItem from="1761083090315" duration="1364000" />
+      <workItem from="1761083090315" duration="1694000" />
     </task>
     <servers />
   </component>
