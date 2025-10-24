@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2c3eedb5-8467-4e75-b454-5dd597a223f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bubblesort/bubblesort/Bar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bubblesort/bubblesort/Bar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bubblesort/bubblesort/BubbleSortApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bubblesort/bubblesort/BubbleSortApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bubblesort/bubblesort/BubbleSortController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bubblesort/bubblesort/BubbleSortController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/bubblesort/bubblesort/BubbleSortControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/bubblesort/bubblesort/BubbleSortControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,27 +43,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.BubbleSortApp.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/AlgoWorldFX/bubblesort&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BubbleSortApp.executor": "Run",
+    "JUnit.BubbleSortControllerTest.testBarHighlightColorChane.executor": "Run",
+    "JUnit.BubbleSortControllerTest.testCreateBarsAndResetAnimation.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/xampp/htdocs/AlgoWorldFX/bubblesort",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -73,7 +74,7 @@
       <recent name="org.bubblesort.bubblesort" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.BubbleSortControllerTest.testSwapAnimationDoesNotChangeNumberOfBars">
     <configuration name="BubbleSortApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.bubblesort.bubblesort.BubbleSortApp" />
       <module name="bubblesort" />
@@ -87,8 +88,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BubbleSortControllerTest.testBarHighlightColorChane" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bubblesort" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bubblesort.bubblesort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.bubblesort.bubblesort" />
+      <option name="MAIN_CLASS_NAME" value="org.bubblesort.bubblesort.BubbleSortControllerTest" />
+      <option name="METHOD_NAME" value="testBarHighlightColorChane" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BubbleSortControllerTest.testCreateBarsAndResetAnimation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bubblesort" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bubblesort.bubblesort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.bubblesort.bubblesort" />
+      <option name="MAIN_CLASS_NAME" value="org.bubblesort.bubblesort.BubbleSortControllerTest" />
+      <option name="METHOD_NAME" value="testCreateBarsAndResetAnimation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BubbleSortControllerTest.testSortLogicalOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bubblesort" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bubblesort.bubblesort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.bubblesort.bubblesort" />
+      <option name="MAIN_CLASS_NAME" value="org.bubblesort.bubblesort.BubbleSortControllerTest" />
+      <option name="METHOD_NAME" value="testSortLogicalOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BubbleSortControllerTest.testSwapAnimationDoesNotChangeNumberOfBars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bubblesort" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bubblesort.bubblesort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.bubblesort.bubblesort" />
+      <option name="MAIN_CLASS_NAME" value="org.bubblesort.bubblesort.BubbleSortControllerTest" />
+      <option name="METHOD_NAME" value="testSwapAnimationDoesNotChangeNumberOfBars" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BubbleSortControllerTest.testSwapAnimationDoesNotChangeNumberOfBars" />
+        <item itemvalue="JUnit.BubbleSortControllerTest.testSortLogicalOrder" />
+        <item itemvalue="JUnit.BubbleSortControllerTest.testCreateBarsAndResetAnimation" />
+        <item itemvalue="JUnit.BubbleSortControllerTest.testBarHighlightColorChane" />
         <item itemvalue="Application.BubbleSortApp" />
       </list>
     </recent_temporary>
@@ -117,7 +186,8 @@
       <workItem from="1761083090315" duration="1694000" />
       <workItem from="1761315088798" duration="327000" />
       <workItem from="1761317563045" duration="78000" />
-      <workItem from="1761335981933" duration="1189000" />
+      <workItem from="1761335981933" duration="3199000" />
+      <workItem from="1761339209528" duration="1362000" />
     </task>
     <servers />
   </component>
