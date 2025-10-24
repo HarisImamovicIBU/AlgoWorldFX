@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2c3eedb5-8467-4e75-b454-5dd597a223f4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/bubblesort/bubblesort/BubbleSortControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/bubblesort/bubblesort/BubbleSortControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/bubblesort/bubblesort/BarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/bubblesort/bubblesort/BarTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +45,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.BubbleSortApp.executor": "Run",
+    "JUnit.BarTest.testHighlightChangesColor.executor": "Run",
     "JUnit.BubbleSortControllerTest.testBarHighlightColorChane.executor": "Run",
     "JUnit.BubbleSortControllerTest.testCreateBarsAndResetAnimation.executor": "Run",
+    "JUnit.BubbleSortControllerTest.testSortLogicalOrder.executor": "Run",
+    "JUnit.BubbleSortControllerTest.testSwapAnimationDoesNotChangeNumberOfBars.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
@@ -74,21 +76,8 @@
       <recent name="org.bubblesort.bubblesort" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BubbleSortControllerTest.testSwapAnimationDoesNotChangeNumberOfBars">
-    <configuration name="BubbleSortApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.bubblesort.bubblesort.BubbleSortApp" />
-      <module name="bubblesort" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.bubblesort.bubblesort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BubbleSortControllerTest.testBarHighlightColorChane" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BarTest">
+    <configuration name="BarTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bubblesort" />
       <extension name="coverage">
         <pattern>
@@ -97,14 +86,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.bubblesort.bubblesort" />
-      <option name="MAIN_CLASS_NAME" value="org.bubblesort.bubblesort.BubbleSortControllerTest" />
-      <option name="METHOD_NAME" value="testBarHighlightColorChane" />
+      <option name="MAIN_CLASS_NAME" value="org.bubblesort.bubblesort.BarTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BarTest.testHighlightChangesColor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bubblesort" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.bubblesort.bubblesort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.bubblesort.bubblesort" />
+      <option name="MAIN_CLASS_NAME" value="org.bubblesort.bubblesort.BarTest" />
+      <option name="METHOD_NAME" value="testHighlightChangesColor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BubbleSortControllerTest.testCreateBarsAndResetAnimation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BarTest.testRemoveHighlightRestoresColor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bubblesort" />
       <extension name="coverage">
         <pattern>
@@ -113,8 +117,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.bubblesort.bubblesort" />
-      <option name="MAIN_CLASS_NAME" value="org.bubblesort.bubblesort.BubbleSortControllerTest" />
-      <option name="METHOD_NAME" value="testCreateBarsAndResetAnimation" />
+      <option name="MAIN_CLASS_NAME" value="org.bubblesort.bubblesort.BarTest" />
+      <option name="METHOD_NAME" value="testRemoveHighlightRestoresColor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BarTest" />
+        <item itemvalue="JUnit.BarTest.testHighlightChangesColor" />
+        <item itemvalue="JUnit.BarTest.testRemoveHighlightRestoresColor" />
         <item itemvalue="JUnit.BubbleSortControllerTest.testSwapAnimationDoesNotChangeNumberOfBars" />
         <item itemvalue="JUnit.BubbleSortControllerTest.testSortLogicalOrder" />
-        <item itemvalue="JUnit.BubbleSortControllerTest.testCreateBarsAndResetAnimation" />
-        <item itemvalue="JUnit.BubbleSortControllerTest.testBarHighlightColorChane" />
-        <item itemvalue="Application.BubbleSortApp" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +191,7 @@
       <workItem from="1761315088798" duration="327000" />
       <workItem from="1761317563045" duration="78000" />
       <workItem from="1761335981933" duration="3199000" />
-      <workItem from="1761339209528" duration="1362000" />
+      <workItem from="1761339209528" duration="2373000" />
     </task>
     <servers />
   </component>
