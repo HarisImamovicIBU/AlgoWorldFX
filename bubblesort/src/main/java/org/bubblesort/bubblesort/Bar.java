@@ -13,7 +13,8 @@ public class Bar extends StackPane {
     private final Label label;
     public Bar(int value, double width, double maxValue) {
         this.value = value;
-        double height = value / (double) maxValue * 300;
+        double minHeight = 50;
+        double height = minHeight + (value / (double) maxValue) * 250; //Negatives not taken into consideration yet
         rect = new Rectangle(width, height);
         rect.setFill(Color.web("#0d6efd"));
         rect.setStroke(Color.WHITE);
