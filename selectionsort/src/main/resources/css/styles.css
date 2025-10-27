@@ -1,0 +1,15 @@
+.reset-btn{
+    -fx-background-color: #0d6efd;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10px;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+}
+.reset-btn:hover{
+    -fx-background-color: "0b5ed7";
+}
+.reset-btn:pressed{
+    -fx-background-color: green;
+}
