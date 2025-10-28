@@ -13,7 +13,7 @@
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.15), 6, 0, 0, 3);
 }
 .reset-btn:pressed{
-    -fx-background-color: #0a58ca;
+    -fx-background-color: green;
     -fx-translate-y: 1;
 }
 .speed-slider{
