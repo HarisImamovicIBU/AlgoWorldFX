@@ -12,11 +12,22 @@ public class SelectionSortController {
     private final HBox container;
     private final List<Bar> bars;
     private final double spacing = 10;
+    private double speedMultiplier = 1.0;
+    private final double baseAnimationSpeed = 900;
     public SelectionSortController(HBox container, int[] array) {
         this.container = container;
         this.bars = new ArrayList<>();
         container.setSpacing(spacing);
         createBars(array);
+    }
+    public void setSpeedMultiplier(double multiplier) {
+        this.speedMultiplier = multiplier;
+    }
+    public double getSpeedMultiplier() {
+        return speedMultiplier;
+    }
+    private double getAnimationDuration() {
+        return baseAnimationSpeed / speedMultiplier;
     }
     private void createBars(int[] array) {
         container.getChildren().clear();
@@ -40,14 +51,14 @@ public class SelectionSortController {
             int min_idx = i;
             final int currentI = i;
             final Bar currentBar = sortedBars.get(i);
-            mainSequence.getChildren().add(createPause(900, () -> {
+            mainSequence.getChildren().add(createPause(getAnimationDuration(), () -> {
                 currentBar.highlightMin();
             }));
             for (int j = i + 1; j < sortedBars.size(); j++) {
                 final int currentJ = j;
                 final Bar compareBar = sortedBars.get(j);
 
-                mainSequence.getChildren().add(createPause(900, () -> {
+                mainSequence.getChildren().add(createPause(getAnimationDuration(), () -> {
                     compareBar.highlight();
                 }));
 
@@ -56,12 +67,13 @@ public class SelectionSortController {
                     min_idx = j;
                     final Bar newMinBar = sortedBars.get(min_idx);
 
-                    mainSequence.getChildren().add(createPause(900, () -> {
+                    mainSequence.getChildren().add(createPause(getAnimationDuration(), () -> {
                         oldMinBar.removeHighlight();
                         newMinBar.highlightMin();
                     }));
-                } else {
-                    mainSequence.getChildren().add(createPause(900, () -> {
+                }
+                else {
+                    mainSequence.getChildren().add(createPause(getAnimationDuration(), () -> {
                         compareBar.removeHighlight();
                     }));
                 }
@@ -78,14 +90,14 @@ public class SelectionSortController {
                 bars.set(visualIndex1, sortedBars.get(i));
                 bars.set(visualIndex2, sortedBars.get(finalMinIdx));
             }
-            mainSequence.getChildren().add(createPause(900, () -> {
+            mainSequence.getChildren().add(createPause(getAnimationDuration(), () -> {
                 sortedBars.get(currentI).markSorted();
                 if (finalMinIdx != currentI) {
                     sortedBars.get(finalMinIdx).removeHighlight();
                 }
             }));
         }
-        mainSequence.getChildren().add(createPause(900, () -> {
+        mainSequence.getChildren().add(createPause(getAnimationDuration(), () -> {
             sortedBars.get(sortedBars.size() - 1).markSorted();
         }));
 
@@ -96,19 +108,19 @@ public class SelectionSortController {
         Bar bar2 = bars.get(index2);
 
         double distance = (index2 - index1) * (bar1.getBoundsInParent().getWidth() + spacing);
-        TranslateTransition move1 = new TranslateTransition(Duration.millis(900), bar1);
+        TranslateTransition move1 = new TranslateTransition(Duration.millis(getAnimationDuration()), bar1);
         move1.setByX(distance);
-        TranslateTransition move2 = new TranslateTransition(Duration.millis(900), bar2);
+        TranslateTransition move2 = new TranslateTransition(Duration.millis(getAnimationDuration()), bar2);
         move2.setByX(-distance);
 
         SequentialTransition swapSeq = new SequentialTransition();
-        PauseTransition startPause = new PauseTransition(Duration.millis(900));
+        PauseTransition startPause = new PauseTransition(Duration.millis(getAnimationDuration()));
         startPause.setOnFinished(e -> {
             move1.play();
             move2.play();
         });
         swapSeq.getChildren().add(startPause);
-        swapSeq.getChildren().add(new PauseTransition(Duration.millis(900)));
+        swapSeq.getChildren().add(new PauseTransition(Duration.millis(getAnimationDuration())));
 
         return swapSeq;
     }
