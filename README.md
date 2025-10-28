@@ -59,5 +59,6 @@ The goal of **AlgoWorldFX** is to make **learning algorithms more interactive, i
 
 ## 📚 Algorithms Included
 
-- **Bubble Sort** – work in progress  
-- *(more algorithms coming soon! :D)*
+- **Bubble Sort**  
+- **Selection Sort**
+- **Insertion Sort** - coming soon...
