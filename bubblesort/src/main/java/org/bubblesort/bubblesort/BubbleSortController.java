@@ -12,11 +12,22 @@ public class BubbleSortController {
     private final HBox container;
     private final List<Bar> bars;
     private final double spacing = 10;
+    private double speedMultiplier = 1.0;
+    private final double baseAnimationSpeed = 900;
     public BubbleSortController(HBox container, int[] array) {
         this.container = container;
         this.bars = new ArrayList<>();
         container.setSpacing(spacing);
         createBars(array);
+    }
+    public void setSpeedMultiplier(double multiplier) {
+        this.speedMultiplier = multiplier;
+    }
+    public double getSpeedMultiplier() {
+        return speedMultiplier;
+    }
+    private double getAnimationDuration() {
+        return baseAnimationSpeed / speedMultiplier;
     }
     private void createBars(int[] array) {
         container.getChildren().clear();
@@ -39,7 +50,7 @@ public class BubbleSortController {
             for (int j = 0; j < bars.size() - i - 1; j++) {
                 Bar bar1 = bars.get(j);
                 Bar bar2 = bars.get(j + 1);
-                mainSequence.getChildren().add(createPause(900, () -> {
+                mainSequence.getChildren().add(createPause(getAnimationDuration(), () -> {
                     bar1.highlight();
                     bar2.highlight();
                 }));
@@ -49,9 +60,9 @@ public class BubbleSortController {
                     bars.set(j + 1, bar1);
                 }
                 else {
-                    mainSequence.getChildren().add(createPause(900, null));
+                    mainSequence.getChildren().add(createPause(getAnimationDuration(), null));
                 }
-                mainSequence.getChildren().add(createPause(900, () -> {
+                mainSequence.getChildren().add(createPause(getAnimationDuration(), () -> {
                     bar1.removeHighlight();
                     bar2.removeHighlight();
                 }));
@@ -63,19 +74,18 @@ public class BubbleSortController {
         Bar bar1 = bars.get(index1);
         Bar bar2 = bars.get(index2);
         double distance = bar1.getBoundsInParent().getWidth() + spacing;
-        TranslateTransition move1 = new TranslateTransition(Duration.millis(900), bar1);
+        TranslateTransition move1 = new TranslateTransition(Duration.millis(getAnimationDuration()), bar1);
         move1.setByX(distance);
-        TranslateTransition move2 = new TranslateTransition(Duration.millis(900), bar2);
+        TranslateTransition move2 = new TranslateTransition(Duration.millis(getAnimationDuration()), bar2);
         move2.setByX(-distance);
         SequentialTransition swapSeq = new SequentialTransition();
-        PauseTransition startPause = new PauseTransition(Duration.millis(900));
+        PauseTransition startPause = new PauseTransition(Duration.millis(getAnimationDuration()));
         startPause.setOnFinished(e -> {
             move1.play();
             move2.play();
         });
         swapSeq.getChildren().add(startPause);
-        swapSeq.getChildren().add(new PauseTransition(Duration.millis(900)));
-
+        swapSeq.getChildren().add(new PauseTransition(Duration.millis(getAnimationDuration())));
         return swapSeq;
     }
     private PauseTransition createPause(double millis, Runnable action) {
