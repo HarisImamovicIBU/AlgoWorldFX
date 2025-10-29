@@ -34,7 +34,7 @@ public class Bar extends StackPane {
     public void highlight() {
         rect.setFill(Color.web("#dc3545"));
     }
-    public void highlightMin() {
+    public void highlightKey() {
         rect.setFill(Color.web("#ffc107"));
     }
     public void markSorted() {
